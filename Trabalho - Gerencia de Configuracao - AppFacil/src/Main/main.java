@@ -2,6 +2,8 @@ package Main;
 
 
 import Telas.Gestor.TelaAdicionarAoCardapio;
+import Telas.Sistema.TelaLogin;
+import Telas.Sistema.TelaZero;
 
 public class main {
 
@@ -10,5 +12,8 @@ public class main {
         boolean status = false;
 
         new TelaAdicionarAoCardapio().setVisible(true);
+        new TelaLogin().setVisible(true);
+        new TelaZero().setVisible(true);
+
     }
 }
