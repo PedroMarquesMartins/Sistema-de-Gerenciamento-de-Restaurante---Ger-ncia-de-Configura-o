@@ -1,6 +1,8 @@
 package Main;
 
 
+import Telas.Garcom.TelaAdicionarPedidos;
+import Telas.Garcom.TelaPedidos;
 import Telas.Gestor.TelaAdicionarAoCardapio;
 import Telas.Sistema.TelaLogin;
 import Telas.Sistema.TelaZero;
@@ -11,9 +13,11 @@ public class main {
         
         boolean status = false;
 
-        new TelaAdicionarAoCardapio().setVisible(true);
-        new TelaLogin().setVisible(true);
-        new TelaZero().setVisible(true);
+        new TelaAdicionarAoCardapio().setVisible(false);
+        new TelaLogin().setVisible(false);
+        new TelaZero().setVisible(false);
+        new TelaAdicionarPedidos().setVisible(true);
+        new TelaPedidos().setVisible(true);
 
     }
 }
