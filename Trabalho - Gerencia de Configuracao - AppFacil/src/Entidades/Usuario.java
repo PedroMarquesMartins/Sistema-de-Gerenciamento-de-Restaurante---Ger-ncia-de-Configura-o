@@ -1,19 +1,20 @@
 package Entidades;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "usuario")
 public class Usuario {
-    private int id;
+
+    @Id
+    @Column(name = "username", nullable = false, unique = true, length = 50)
     private String user;
+
+    @Column(name = "senha", nullable = false, length = 100)
     private String senha;
+
+    @Column(name = "permissao", nullable = false)
     private int permissao;
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUser() {
         return user;
